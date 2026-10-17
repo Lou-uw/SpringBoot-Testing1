@@ -1,5 +1,6 @@
 package com.example.testing.usecase
 
+import com.example.testing.model.PrecondicionInvalidaException
 import com.example.testing.service.CalculadoraDeDescuentos
 import io.kotest.assertions.throwables.shouldThrow
 import io.kotest.core.spec.style.BehaviorSpec

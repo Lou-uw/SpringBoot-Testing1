@@ -1,5 +1,6 @@
-package com.example.testing
+package com.example.testing.service
 
+import com.example.testing.model.Item
 import io.kotest.core.spec.style.BehaviorSpec
 import io.kotest.matchers.shouldBe
 
