@@ -1,3 +1,3 @@
 package com.example.testing.model
 
-class PrecondicionInvalidaException(message: String) : Exception(message)
+class PrecondicionInvalidaException(message: String) : RuntimeException(message)
