@@ -13,7 +13,7 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers.status
 
 class TestDeIntegracionEndpointDeDescuentos(
     private val navegador: MockMvc
-    // 3. ¡Eliminado el @MockkBean! Ahora se ejecuta la lógica real de CalculadoraDeDescuentos
+    // 3. ¡Eliminado el @MockkBean! Ahora se ejecuta la lógica real de CalculadoraDeDescuentosService
 ) : BehaviorSpec({
 
     Given("la aplicación cargada completamente con sus servicios reales") {

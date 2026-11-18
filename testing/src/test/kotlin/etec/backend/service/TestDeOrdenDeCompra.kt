@@ -4,11 +4,11 @@ import etec.backend.model.Item
 import io.kotest.core.spec.style.BehaviorSpec
 import io.kotest.matchers.shouldBe
 
-class TestDeOrdenDeCompra : BehaviorSpec({
+class TestDeOrdenDeCompraService : BehaviorSpec({
     Given("una orden de compra cuya suma de items resulta en 100 y el costo de la manteca es de 20") {
         val item =
             Item("Un producto", 100)
-        val orden = OrdenDeCompra()
+        val orden = OrdenDeCompraService()
         orden.agregarItem(item)
 
         When("Agrego una manteca a la orden") {

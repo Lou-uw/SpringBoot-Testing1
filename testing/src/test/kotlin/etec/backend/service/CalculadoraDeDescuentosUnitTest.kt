@@ -5,9 +5,9 @@ import io.kotest.assertions.throwables.shouldThrow
 import io.kotest.core.spec.style.BehaviorSpec
 import io.kotest.matchers.shouldBe
 
-class CalculadoraDeDescuentosUnitTest : BehaviorSpec({
+class CalculadoraDeDescuentosServiceUnitTest : BehaviorSpec({
 
-    val calculadora = CalculadoraDeDescuentos()
+    val calculadora = CalculadoraDeDescuentosService()
 
     Given("una calculadora de descuentos instanciada directamente, sin levantar Spring") {
 

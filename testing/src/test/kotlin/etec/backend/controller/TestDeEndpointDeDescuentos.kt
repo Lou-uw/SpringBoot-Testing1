@@ -1,7 +1,7 @@
 package etec.backend.controller
 
 import com.ninjasquad.springmockk.MockkBean
-import etec.backend.service.CalculadoraDeDescuentos
+import etec.backend.service.CalculadoraDeDescuentosService
 import io.kotest.core.spec.style.BehaviorSpec
 import io.mockk.every
 import org.springframework.boot.webmvc.test.autoconfigure.WebMvcTest
@@ -13,14 +13,14 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers.status
 // 1. @WebMvcTest SOLO levanta la capa web (rutas, JSON, HTTP).
 // No inicia el contexto completo de Spring Boot ni levanta repositorios ni servicios reales.
 // (En un test de integración usaríamos @SpringBootTest + @AutoConfigureMockMvc).
-@WebMvcTest(DescuentosEndpoint::class)
+@WebMvcTest(CalculadoraDeDescuentosController::class)
 class TestDeEndpointDeDescuentos(
     private val navegador: MockMvc,
 
     // 2. Inyectamos un MOCK del servicio en el contexto reducido de Spring.
-    // El código real dentro de CalculadoraDeDescuentos NUNCA se ejecutará en esta prueba.
+    // El código real dentro de CalculadoraDeDescuentosService NUNCA se ejecutará en esta prueba.
     // (En integración eliminaríamos esta anotación para usar el bean real registrado por Spring).
-    @MockkBean private val calculadora: CalculadoraDeDescuentos,
+    @MockkBean private val calculadora: CalculadoraDeDescuentosService,
 ) : BehaviorSpec({
 
     Given("un endpoint para calcular descuentos /api/descuentos") {

@@ -1,7 +1,7 @@
 package etec.backend.controller
 
 import com.ninjasquad.springmockk.MockkBean
-import etec.backend.service.CalculadoraDeDescuentos
+import etec.backend.service.CalculadoraDeDescuentosService
 import etec.backend.model.PrecondicionInvalidaException
 import io.kotest.core.spec.style.BehaviorSpec
 import io.mockk.every
@@ -11,10 +11,10 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers.status
 
-@WebMvcTest(DescuentosEndpoint::class)
-class DescuentosEndpointSliceTest(
+@WebMvcTest(CalculadoraDeDescuentosController::class)
+class CalculadoraDeDescuentosControllerSliceTest(
     private val navegador: MockMvc,
-    @MockkBean private val calculadora: CalculadoraDeDescuentos
+    @MockkBean private val calculadora: CalculadoraDeDescuentosService
 ) : BehaviorSpec({
 
     Given("el endpoint GET /api/descuentos") {

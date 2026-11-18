@@ -1,6 +1,6 @@
 package etec.backend.controller
 
-import etec.backend.service.CalculadoraDeDescuentos
+import etec.backend.service.CalculadoraDeDescuentosService
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestMapping
@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RestController
 
 @RestController
 @RequestMapping("/api/descuentos")
-class DescuentosEndpoint(
-    private val calculadora: CalculadoraDeDescuentos,
+class CalculadoraDeDescuentosController(
+    private val calculadora: CalculadoraDeDescuentosService,
 ) {
     @GetMapping
     fun calcular(
