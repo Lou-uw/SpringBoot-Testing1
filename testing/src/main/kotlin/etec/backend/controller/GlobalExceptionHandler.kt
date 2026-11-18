@@ -1,6 +1,6 @@
-package com.example.testing.controller
+package etec.backend.controller
 
-import com.example.testing.model.PrecondicionInvalidaException
+import etec.backend.model.PrecondicionInvalidaException
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.ExceptionHandler

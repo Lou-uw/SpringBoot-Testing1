@@ -1,6 +1,6 @@
-package com.example.testing.controller
+package etec.backend.controller
 
-import com.example.testing.service.CalculadoraDeDescuentos
+import etec.backend.service.CalculadoraDeDescuentos
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestMapping

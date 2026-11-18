@@ -1,6 +1,6 @@
-package com.example.testing.service
+package etec.backend.service
 
-import com.example.testing.model.PrecondicionInvalidaException
+import etec.backend.model.PrecondicionInvalidaException
 import io.kotest.assertions.throwables.shouldThrow
 import io.kotest.core.spec.style.BehaviorSpec
 import io.kotest.matchers.shouldBe

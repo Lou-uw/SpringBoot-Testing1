@@ -1,11 +1,11 @@
-package com.example.testing
+package etec.backend
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class TestingApplication
+class BackendApplication
 
 fun main(args: Array<String>) {
-    runApplication<TestingApplication>(*args)
+    runApplication<BackendApplication>(*args)
 }

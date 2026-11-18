@@ -1,4 +1,4 @@
-package com.example.testing.integration
+package etec.backend.integration
 
 import io.kotest.core.spec.style.BehaviorSpec
 import org.springframework.boot.webmvc.test.autoconfigure.AutoConfigureMockMvc

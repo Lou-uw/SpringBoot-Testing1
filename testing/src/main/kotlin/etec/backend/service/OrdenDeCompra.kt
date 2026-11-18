@@ -1,6 +1,6 @@
-package com.example.testing.service
+package etec.backend.service
 
-import com.example.testing.model.Item
+import etec.backend.model.Item
 
 class OrdenDeCompra {
     private val items = mutableListOf<Item>()
