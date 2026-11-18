@@ -1,6 +1,6 @@
 package etec.backend.service
 
-import etec.backend.model.PrecondicionInvalidaException
+import etec.backend.exception.PrecondicionInvalidaException
 import org.springframework.stereotype.Service
 
 @Service

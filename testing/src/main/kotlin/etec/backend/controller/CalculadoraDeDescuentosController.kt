@@ -1,5 +1,6 @@
 package etec.backend.controller
 
+import etec.backend.dto.DescuentoResponse
 import etec.backend.service.CalculadoraDeDescuentosService
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.GetMapping

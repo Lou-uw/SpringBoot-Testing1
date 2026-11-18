@@ -1,6 +1,7 @@
 package etec.backend.controller
 
-import etec.backend.model.PrecondicionInvalidaException
+import etec.backend.dto.ErrorResponse
+import etec.backend.exception.PrecondicionInvalidaException
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.ExceptionHandler

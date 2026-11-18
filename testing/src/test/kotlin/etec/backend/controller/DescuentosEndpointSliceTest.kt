@@ -2,7 +2,7 @@ package etec.backend.controller
 
 import com.ninjasquad.springmockk.MockkBean
 import etec.backend.service.CalculadoraDeDescuentosService
-import etec.backend.model.PrecondicionInvalidaException
+import etec.backend.exception.PrecondicionInvalidaException
 import io.kotest.core.spec.style.BehaviorSpec
 import io.mockk.every
 import org.springframework.boot.webmvc.test.autoconfigure.WebMvcTest

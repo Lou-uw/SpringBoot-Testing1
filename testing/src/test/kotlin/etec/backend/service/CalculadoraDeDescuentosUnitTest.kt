@@ -1,6 +1,6 @@
 package etec.backend.service
 
-import etec.backend.model.PrecondicionInvalidaException
+import etec.backend.exception.PrecondicionInvalidaException
 import io.kotest.assertions.throwables.shouldThrow
 import io.kotest.core.spec.style.BehaviorSpec
 import io.kotest.matchers.shouldBe
