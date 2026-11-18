@@ -11,7 +11,7 @@ import org.springframework.test.web.servlet.result.MockMvcResultMatchers.status
 @SpringBootTest // 1. Arranca el contexto completo de Spring Boot (Servicios, Repositorios, etc.)
 @AutoConfigureMockMvc // 2. Configura e inyecta el cliente MockMvc para llamadas HTTP
 
-class TestDeIntegracionEndpointDeDescuentos(
+class CalculadoraDeDescuentosIT(
     private val navegador: MockMvc
     // 3. ¡Eliminado el @MockkBean! Ahora se ejecuta la lógica real de CalculadoraDeDescuentosService
 ) : BehaviorSpec({
